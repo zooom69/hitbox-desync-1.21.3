@@ -24,5 +24,7 @@ public class HitboxDesyncModule extends Module {
         double z = vec3d.z + 0.2000000000949811 * (flagZ ? -1 : 1);
 
         mc.player.setPosition(x, mc.player.getY(), z);
+
+        setToggled(false);
     }
 }
